@@ -14,6 +14,8 @@
 		FCA9B6D828CA014D0003C0FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA9B6D728CA014D0003C0FB /* Assets.xcassets */; };
 		FCA9B6DB28CA014D0003C0FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA9B6D928CA014D0003C0FB /* LaunchScreen.storyboard */; };
 		FCA9B6DE28CA014D0003C0FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9B6DD28CA014D0003C0FB /* main.m */; };
+		FCA9B6E728CA017B0003C0FB /* GDRemoteImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9B6E628CA017B0003C0FB /* GDRemoteImageSize.m */; };
+		FCA9B6ED28CA02510003C0FB /* GDRemoteImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9B6EC28CA02510003C0FB /* GDRemoteImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		FCA9B6DA28CA014D0003C0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCA9B6DC28CA014D0003C0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCA9B6DD28CA014D0003C0FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCA9B6E528CA017B0003C0FB /* GDRemoteImageSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDRemoteImageSize.h; sourceTree = "<group>"; };
+		FCA9B6E628CA017B0003C0FB /* GDRemoteImageSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDRemoteImageSize.m; sourceTree = "<group>"; };
+		FCA9B6E928CA02050003C0FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCA9B6EB28CA02510003C0FB /* GDRemoteImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDRemoteImageDownloader.h; sourceTree = "<group>"; };
+		FCA9B6EC28CA02510003C0FB /* GDRemoteImageDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDRemoteImageDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			children = (
 				FCA9B6CA28CA014B0003C0FB /* GDRemoteImageSize */,
 				FCA9B6C928CA014B0003C0FB /* Products */,
+				FCA9B6E828CA02050003C0FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +75,7 @@
 				FCA9B6CF28CA014B0003C0FB /* SceneDelegate.m */,
 				FCA9B6D128CA014B0003C0FB /* ViewController.h */,
 				FCA9B6D228CA014B0003C0FB /* ViewController.m */,
+				FCA9B6E428CA015A0003C0FB /* GDRemoteImageSize */,
 				FCA9B6D428CA014B0003C0FB /* Main.storyboard */,
 				FCA9B6D728CA014D0003C0FB /* Assets.xcassets */,
 				FCA9B6D928CA014D0003C0FB /* LaunchScreen.storyboard */,
@@ -74,6 +83,25 @@
 				FCA9B6DD28CA014D0003C0FB /* main.m */,
 			);
 			path = GDRemoteImageSize;
+			sourceTree = "<group>";
+		};
+		FCA9B6E428CA015A0003C0FB /* GDRemoteImageSize */ = {
+			isa = PBXGroup;
+			children = (
+				FCA9B6E528CA017B0003C0FB /* GDRemoteImageSize.h */,
+				FCA9B6E628CA017B0003C0FB /* GDRemoteImageSize.m */,
+				FCA9B6EB28CA02510003C0FB /* GDRemoteImageDownloader.h */,
+				FCA9B6EC28CA02510003C0FB /* GDRemoteImageDownloader.m */,
+			);
+			path = GDRemoteImageSize;
+			sourceTree = "<group>";
+		};
+		FCA9B6E828CA02050003C0FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCA9B6E928CA02050003C0FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA9B6D328CA014B0003C0FB /* ViewController.m in Sources */,
+				FCA9B6E728CA017B0003C0FB /* GDRemoteImageSize.m in Sources */,
 				FCA9B6CD28CA014B0003C0FB /* AppDelegate.m in Sources */,
 				FCA9B6DE28CA014D0003C0FB /* main.m in Sources */,
 				FCA9B6D028CA014B0003C0FB /* SceneDelegate.m in Sources */,
+				FCA9B6ED28CA02510003C0FB /* GDRemoteImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +330,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zmz.GDRemoteImageSize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,6 +358,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zmz.GDRemoteImageSize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
