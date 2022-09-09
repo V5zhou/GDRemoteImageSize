@@ -20,8 +20,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSString *url = @"https://inews.gtimg.com/newsapp_match/0/13677386628/0";
-//    NSString *url = @"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fe2ca04d9aba88c2f0b5de979ee1622f2954d294e.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1665223640&t=ee609c48beb256028d3a12b618333c5f";
+//    NSString *url = @"https://inews.gtimg.com/newsapp_match/0/13677386628/0";
+    NSString *url = @"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fe2ca04d9aba88c2f0b5de979ee1622f2954d294e.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1665223640&t=ee609c48beb256028d3a12b618333c5f";
     BOOL bImageIO = arc4random()%2;
     CFAbsoluteTime start0 = CFAbsoluteTimeGetCurrent();
     if (bImageIO) {
